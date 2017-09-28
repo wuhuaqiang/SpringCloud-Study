@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://git.oschina.net/yangzengsen/SpringCloud-Learning.git/
+          uri: https://github.com/yihonglei/SpringCloud-Learning.git/
           search-paths: Dalston/config-repo
 #          username:
 #          password:
