@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: zk-client
+  cloud:
+    zookeeper:
+      server:
+        enabled: true
+        connectString: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183
+      discovery:
+        register: false
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        sleepWindowInMilliseconds: 1000
+    execution:
+      isolation:
+        thread:
+          timeoutInMilliseconds: 5000
+
+ribbon:
+  ConnectTimeout: 5000
+  ReadTimeout: 5000
+
+server:
+  port: 8081

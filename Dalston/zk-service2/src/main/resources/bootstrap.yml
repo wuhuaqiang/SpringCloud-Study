@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: zk-service2
+  cloud:
+    zookeeper:
+      server:
+        enabled: true
+        connectString: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183
+      discovery:
+        instanceHost: 127.0.0.1
+        instancePort: ${server.port}
+
+server:
+  port: 2002
